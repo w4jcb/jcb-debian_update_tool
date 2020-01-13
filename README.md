@@ -4,10 +4,19 @@ jcb.sh
 
 jcb.sh is a tool that automates the update procedure for Debian and Ubuntu based Linux systems.
 
+    Installation:
+
+Unzip the "jcb.sh" bash script from the zip archive and move it to /usr/local/bin.
+
+OR
+
+Git clone https://github.com/w4jcb/jcb.git
+
+This will put it in the subfolder "jcb" from wherever you ran it from.
 
     License.
 
-Up is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License Version 2.0. as published by the Free Software Foundation. A copy of the GNU GPL 2.0 is provided with the software.
+Jcb.sh is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License Version 2.0. as published by the Free Software Foundation. A copy of the GNU GPL 2.0 is provided with the software.
 
 
 By Carlton Bryan www.w4jcb.com (GNU/General Public License version 2.0)
