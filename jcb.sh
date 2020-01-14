@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# My version of Up forked to do other things called JCB -- Debian/Ubuntu Update+ Tool (Version 1.0)
+# My version of Up forked to do other things called JCB -- Debian/Ubuntu Update+ Tool (Version 2.0)
 # By Carlton Bryan w4jcb.com (GNU/General Public License version 2.0)
 
 # Set BASH to quit script and exit on errors:
