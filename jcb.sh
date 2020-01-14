@@ -12,9 +12,14 @@ set -e
 clear #Clears the screen
 
 update() {
-echo "Starting full system update..."
+echo "Starting system update..."
 sudo apt update
 sudo apt dist-upgrade -yy
+}
+
+upgrade() {
+echo "starting full system upgrade..."
+sudo apt update && sudo apt upgrade -y
 }
 
 clean() {
@@ -90,27 +95,34 @@ cat << _EOF_
 Press the number of your choice:
 
 1 – Update.
-2 – Clean.
-3 - Help.
-4 - System Info.
-5 - Show Uptime.
-6 - Drive Space.
-7 - Home Space.
+2 - Upgrade.
+3 – Clean.
+4 - Help.
+5 - System Info.
+6 - Show Uptime.
+7 - Drive Space.
+8 - Home Space.
+9 - Show USB.
+10 - Show OS.
 0 – Exit JCB.
 
 
 Each number corresponds to a script function or a set of simple commands.
 _EOF_
 
+
 read selection  #read -n 1 -s selection;
 case $selection in
 1) update leave;pas;clear;;
-2) clean update leave;pas;clear;;
-3) up-help;pas;clear;;
-4) system_info;pas;clear;;
-5) show_uptime;pas;clear;;
-6) df;pas;clear;;
-7) home_space;pas;clear;;
+2) upgrade leave;pas;clear;;
+3) clean update leave;pas;clear;;
+4) up-help;pas;clear;;
+5) system_info;pas;clear;;
+6) show_uptime;pas;clear;;
+7) df;pas;clear;;
+8) home_space;pas;clear;;
+9) show_usb;pas;clear;;
+10) show_OS;pas;clear;;
 0) leave;pas;clear;;
 *) echo "Not a valid choice: Please try again.";pas;clear;;
 esac
