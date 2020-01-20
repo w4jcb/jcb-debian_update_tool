@@ -10,7 +10,7 @@ Unzip the "jcb.sh" bash script from the zip archive and move it to /usr/local/bi
 
 OR
 
-Git clone https://github.com/w4jcb/jcb.git
+git clone https://github.com/w4jcb/jcb-debian_update_tool.git
 
 This will put it in the subfolder "jcb" from wherever you ran it from.
 
