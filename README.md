@@ -1,4 +1,4 @@
-jcb.sh
+jcb-debian_update_tool
     
     Description:
 
