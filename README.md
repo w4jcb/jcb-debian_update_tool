@@ -6,13 +6,13 @@ jcb.sh is a tool that automates the update procedure for Debian and Ubuntu based
 
     Installation:
 
-Unzip the "jcb.sh" bash script from the zip archive and move it to /usr/local/bin.
+Unzip the "jcb-debian_update_tool-master.zip" bash script from the zip archive and move it to /usr/local/bin.
 
 OR
 
 git clone https://github.com/w4jcb/jcb-debian_update_tool.git
 
-This will put it in the subfolder "jcb" from wherever you ran it from.
+This will put it in the subfolder "jcb-debian_update_tool-master" from wherever you ran it from.
 
     License.
 
