@@ -36,7 +36,7 @@ echo "--------------------"
 exit
 }
 
-up-help() {
+up_help() {
 clear #Clears the screen
 cat << _EOF_
 
@@ -86,6 +86,22 @@ echo
 read -rp "Press Enter to continue"
 }
 
+show_usb()
+{
+# shows USB stuff
+	echo "Function show_usb"
+	echo "To show any ttyUSB stuff"
+	python -m serial.tools.list_ports
+}
+
+show_OS()
+{
+# shows OS Stuff
+	echo "Function show_OS"
+	hostnamectl
+}
+
+
 # Execution.
 
 selection="1"
@@ -116,7 +132,7 @@ case $selection in
 1) update leave;pas;clear;;
 2) upgrade leave;pas;clear;;
 3) clean update leave;pas;clear;;
-4) up-help;pas;clear;;
+4) up_help;pas;clear;;
 5) system_info;pas;clear;;
 6) show_uptime;pas;clear;;
 7) df;pas;clear;;
