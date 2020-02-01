@@ -83,7 +83,7 @@ pas()
 sleep 2
 echo
 echo
-read -p "Press Enter to continue"
+read -rp "Press Enter to continue"
 }
 
 # Execution.
@@ -111,7 +111,7 @@ Each number corresponds to a script function or a set of simple commands.
 _EOF_
 
 
-read selection  #read -n 1 -s selection;
+read -r selection  #read -n 1 -s selection;
 case $selection in
 1) update leave;pas;clear;;
 2) upgrade leave;pas;clear;;
