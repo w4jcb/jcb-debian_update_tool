@@ -101,6 +101,11 @@ show_OS()
 	hostnamectl
 }
 
+show_sys_monitor()
+{
+	echo "starting system monitor"
+	gnome-system-monitor
+}
 
 # Execution.
 
@@ -120,6 +125,7 @@ Press the number of your choice:
 8 - Home Space.
 9 - Show USB.
 10 - Show OS.
+11 - System Monitor
 0 – Exit JCB.
 
 
@@ -139,6 +145,7 @@ case $selection in
 8) home_space;pas;clear;;
 9) show_usb;pas;clear;;
 10) show_OS;pas;clear;;
+11) show_sys_monitor;pas;clear;;
 0) leave;pas;clear;;
 *) echo "Not a valid choice: Please try again.";pas;clear;;
 esac
