@@ -10,7 +10,7 @@ Unzip the "jcb-debian_update_tool-master.zip" bash script from the zip archive a
 
 OR
 
-git clone https://github.com/w4jcb/jcb-debian_update_tool.git
+git clone https://github.com/w4jcb/jcb-debian_update_tool.git Local-Repo/jcb-debian_update_tool
 
 This will put it in the subfolder "jcb-debian_update_tool-master" from wherever you ran it from.
 
