@@ -91,7 +91,7 @@ show_usb()
 # shows USB stuff
 	echo "Function show_usb"
 	echo "To show any ttyUSB stuff"
-	python -m serial.tools.list_ports
+	python3 -m serial.tools.list_ports
 }
 
 show_OS()
@@ -105,6 +105,11 @@ show_sys_monitor()
 {
 	echo "starting system monitor"
 	gnome-system-monitor
+}
+
+run_bu()
+{
+bu
 }
 
 # Execution.
@@ -126,6 +131,7 @@ Press the number of your choice:
 9 - Show USB.
 10 - Show OS.
 11 - System Monitor
+12 - Run BU Backup
 0 – Exit JCB.
 
 
@@ -146,6 +152,7 @@ case $selection in
 9) show_usb;pas;clear;;
 10) show_OS;pas;clear;;
 11) show_sys_monitor;pas;clear;;
+12) run_bu;pas;clear;;
 0) leave;pas;clear;;
 *) echo "Not a valid choice: Please try again.";pas;clear;;
 esac
