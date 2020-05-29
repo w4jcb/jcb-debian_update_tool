@@ -80,7 +80,7 @@ home_space()
 
 pas()
 {
-sleep 2
+sleep 1
 echo
 echo
 read -rp "Press Enter to continue"
