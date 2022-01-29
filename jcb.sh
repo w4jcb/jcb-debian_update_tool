@@ -40,7 +40,7 @@ up_help() {
 clear #Clears the screen
 cat << _EOF_
 
-Up is a tool that automates the update procedure for Debian and Ubuntu based
+Up is a tool that automates the update procedure for Debian based
 Linux systems.
 
 By Carlton Bryan www.w4jcb.com (GNU/General Public License version 2.0)
@@ -112,6 +112,12 @@ run_bu()
 bu
 }
 
+run_desktop()
+{
+sudo tasksel
+}
+
+
 # Execution.
 
 selection="1"
@@ -120,9 +126,9 @@ until [ $selection = " " ]; do
 cat << _EOF_
 Press the number of your choice:
 
-1 – Update.
+1 - Update.
 2 - Upgrade.
-3 – Clean.
+3 - Clean.
 4 - Help.
 5 - System Info.
 6 - Show Uptime.
@@ -132,7 +138,8 @@ Press the number of your choice:
 10 - Show OS.
 11 - System Monitor
 12 - Run BU Backup
-0 – Exit JCB.
+13 - Change /download Desktops
+0 - Exit JCB.
 
 
 Each number corresponds to a script function or a set of simple commands.
@@ -153,6 +160,7 @@ case $selection in
 10) show_OS;pas;clear;;
 11) show_sys_monitor;pas;clear;;
 12) run_bu;pas;clear;;
+13) run_desktop;pas;clear;;
 0) leave;pas;clear;;
 *) echo "Not a valid choice: Please try again.";pas;clear;;
 esac
